@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.slim.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+   <script>
+            // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDITuRO2FcDyKAM6buKof23VRY5ftoa1pI",
+    authDomain: "homeservice-f676b.firebaseapp.com",
+    databaseURL: "https://homeservice-f676b.firebaseio.com",
+    storageBucket: "homeservice-f676b.appspot.com",
+    messagingSenderId: "882142861488"
+  };
+            firebase.initializeApp(config);
+            var db = firebase.database();
+        </script>
+        <script type="text/javascript" src="js/miscript.js"></script>
+
+	<title>Services Home</title>
+</head>
+<body>
+<nav class="nav navbar-default">
+	
+	<h2 class="text-center">Services Home</h2>
+</nav>
+<br>
+<br>
+<div class="container">
+	<div class="row">
+
+	<div class="col-md-4">
+		<p class="text-justify">  
+
+<label>pregunta 1 :<br> ¿Estaria usted dispuesto a utilizar este aplicativo ?</label><br><br>
+<label>pregunta 2 :<br> ¿Considera que esta aplicación soluciona una necesidad en el mercado?</label><br><br>
+<label>pregunta 3 :<br> ¿Considera usted que los servicios de los profesionales, evaluados en la plataforma por la experiencia de otros usuarios aportara mayor fiabilidad a la hora de solicitarlos?</label><br><br>
+<label>pregunta 4 :<br> ¿Considera usted que los profesionales al pautar sus servicios en el aplicativo web, tendran mayor oferta y por ende  mayor competitividad?</label><br><br>
+<label>pregunta 5 :<br> ¿Considera importante que la aplicación permita comparar diferentes precios de los servicios o productos?</label>
+</p>
+<p class="text-justify">
+
+</p>
+	</div>
+	<div class="col-md-8">
+		
+		<div class="panel panel-default">
+		<a href="INDEX.html" title="Ir Arriba">INICIO</a>
+			<div class="panel-heading">
+				<h3>Comentarios Realizados</h3>
+				<button type="button" class="btn btn-success form-control" id="btnGuardar" >Enviar</button>
+			</div>
+			<div class="panel-body">
+				  <table id="mitabla" class="table table-hover">
+
+                    <tr>
+                        <th>pregunta1</th>
+                        <th>pregunta2</th>
+                        <th>pregunta3</th>
+                        <th>pregunta4</th>
+                        <th>pregunta5</th>
+                    </tr>
+
+                </table>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+
+<div class="row">
+	<div class="col-md-12">
+		
+	</div>
+</div>
+
+</body>
+</html>
+
