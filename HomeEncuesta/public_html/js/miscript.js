@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     $("#btnGuardar").click(function () {
         
-        
+        $pregunta0    = $("#pre0").val();
         $pregunta1    = $("#pre1").val();
         $pregunta2    = $("#pre2").val();
         $pregunta3    = $("#pre3").val();
@@ -12,7 +12,7 @@ $(document).ready(function () {
         $pregunta5    = $("#pre5").val();
 
        
-        console.log(escribir($pregunta1,$pregunta2,$pregunta3,$pregunta4,$pregunta5)+"es");
+        console.log(escribir($pregunta0,$pregunta1,$pregunta2,$pregunta3,$pregunta4,$pregunta5)+"es");
         limpiarCampos();
     });
 
@@ -24,10 +24,11 @@ $(document).ready(function () {
 
 });
 
-function escribir(punto1,punto2,punto3,punto4,punto5) {
+function escribir(punto0,punto1,punto2,punto3,punto4,punto5) {
     $tabla = "registros";
     // A post entry.
     var postData = {
+        pregunta0: punto0,
         pregunta1: punto1,
         pregunta2: punto2,
         pregunta3: punto3,
@@ -59,6 +60,7 @@ function cargar() {
 
     function logValue(info) {
         $fila = "";
+        $pregunta0   = info.val().pregunta0;
         $pregunta1   = info.val().pregunta1;
         $pregunta2   = info.val().pregunta2;
         $pregunta3   = info.val().pregunta3;
@@ -66,6 +68,7 @@ function cargar() {
         $pregunta5   = info.val().pregunta5;
         
         $fila   += "<tr>";
+        $fila   += "<td>"+$pregunta0+"</td>";
         $fila   += "<td>"+$pregunta1+"</td>";
         $fila   += "<td>"+$pregunta2+"</td>";
         $fila   += "<td>"+$pregunta3+"</td>";
