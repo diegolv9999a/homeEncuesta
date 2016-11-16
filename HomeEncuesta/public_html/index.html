@@ -12,6 +12,20 @@ and open the template in the editor.
         <script src="https://code.jquery.com/jquery-3.1.1.slim.js"></script>
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+   <script>
+            // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDITuRO2FcDyKAM6buKof23VRY5ftoa1pI",
+    authDomain: "homeservice-f676b.firebaseapp.com",
+    databaseURL: "https://homeservice-f676b.firebaseio.com",
+    storageBucket: "homeservice-f676b.appspot.com",
+    messagingSenderId: "882142861488"
+  };
+            firebase.initializeApp(config);
+            var db = firebase.database();
+        </script>
+        <script type="text/javascript" src="js/miscript.js"></script>
     </head>
     <body>
         <div>EL PRIMER COMMIT</div>
